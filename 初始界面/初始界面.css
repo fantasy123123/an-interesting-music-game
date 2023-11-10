@@ -1,0 +1,72 @@
+#titleImg{
+    width:150px;
+    height: 150px;;
+}
+
+#titleDivImg{
+    display: inline;
+}
+
+#titleWord1{
+    font-size: 100px;
+    color: rgb(182, 154, 120);
+    display: inline;
+    font-family: fantasy;
+    font-style: oblique;
+}
+
+#titleWord2{
+    font-size: 100px;
+    color: rgb(255, 154, 3);
+    display: inline;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+#titleWord3{
+    font-size: 100px;
+    color: brown;
+    display: inline;
+    font-family: sans-serif;
+    font-style:italic;
+}
+
+#titleWord4{
+    font-size: 100px;
+    color: black;
+    display: inline;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#video{
+    height: 400px;
+    left: 400px;
+}
+
+#choiceTest{
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 30px;
+    display: inline;
+}
+
+#choiceNum{
+    width: 50px;
+    height:30px;
+    border-radius:10px;
+}
+
+#error{
+    color: red;
+}
+
+#btn
+{
+    color: blanchedalmond;
+    background-color: rgba(0, 0, 0, 0.503);
+    font-size: 50px;
+    border-radius:15px;
+    border-color:  rgba(0, 0, 0, 0.503);
+}
+

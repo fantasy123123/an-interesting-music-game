@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./初始界面.css">
+</head>
+
+
+<body>
+<div id="title" align="center">
+    <div id="titleDivImg"><img src="./ji.jpg" id="titleImg"></div>
+    <div id="titleWord1">你</div>
+    <div id="titleWord2">太</div>
+    <div id="titleWord3">美  </div>
+    <div id="titleWord4">音游</div>
+</div>
+
+<div align="center" id="videoDiv"><video muted id="video" src="./ji.mp4"  autoplay loop></video></div>
+<br>
+<div align="center">
+    <div id="choiceTest">选择难度（1-5）：</div>
+    <input type="test" id="choiceNum">
+</div>
+<div id="error" align="center"></div>
+<br>
+<div align="center"><a href="../游戏界面/game.html"><button id="btn" disabled> 开始游戏！ </button></a></div>
+
+<script>
+    const num=document.querySelector('#choiceNum');
+    const btn=document.querySelector('#btn')
+    num.addEventListener('change',function (){
+        let reg=/^[1-5]{1}$/
+        if(reg.test(num.value)===false||num.value==='')
+        {
+            document.querySelector('#error').innerHTML='请输入数字1-5中的一位数字';
+            btn.disabled=true;
+        }
+        if(reg.test(num.value)===true)
+        {
+            document.querySelector('#error').innerHTML='';
+            btn.disabled=false;
+        }
+    })
+
+    btn.addEventListener('click',()=>{
+        let difficultyNum=document.querySelector('#choiceNum').value;
+        localStorage.setItem('difficulty',difficultyNum);
+    })
+</script>
+
+</body>
+</html>
